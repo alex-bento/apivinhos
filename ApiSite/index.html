@@ -22,7 +22,7 @@
         console.log(response.data)
 
         games.forEach(game => {
-            var item = document.createElement("src");
+            var item = document.createElement("li");
             item.innerHTML = game.label
             listaGame.appendChild(item);
         });
