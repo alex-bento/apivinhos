@@ -7,6 +7,6 @@ module.exports = [
     {
         "label":"Facebook",
         "icon":"https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/icons/facebook.svg",
-        "link":"https://facebook.com/bentovinhos"
+        "link":"https://facebook.com/alex.bento.102"
       }
 ]
