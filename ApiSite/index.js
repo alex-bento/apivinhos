@@ -8,6 +8,7 @@ const socialLink = require('./database/social-links')
 const database = require('./database/database')
 const games = require('./database/game')
 
+
 app.use(cors());
 
 app.use(bodyParser.urlencoded({extended: false}));
