@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <h4>Lista da API</h4>
+    <ul id="games"></ul>
+    <img src="" alt="" id="gamer">
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    axios.get("http://localhost:5000/socialLink").then(response => {
+
+        var games = response.data
+        var lista = document.getElementById("games");
+        var listaGame = document.getElementById("gamer");
+        console.log(response.data)
+
+        games.forEach(game => {
+            var item = document.createElement("src");
+            item.innerHTML = game.label
+            listaGame.appendChild(item);
+        });
+
+
+    }).catch(error => {
+        console.log(error)
+    })
+</script>
+</html>
